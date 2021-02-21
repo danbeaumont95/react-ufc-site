@@ -1,0 +1,40 @@
+.App {
+  text-align: center;
+}
+
+.fighters_list {
+  list-style-type: none;
+}
+
+.staff_list {
+  list-style-type: none;
+}
+
+.fighter_img {
+  width: 200px;
+  height: 100px;
+}
+
+.staff_img {
+  width: 200px;
+  height: 100px;
+}
+
+.mapContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  }
+
+.events_list {
+    list-style-type: none;
+    border: orange 2px solid;
+  }
+
+  .event_title {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
