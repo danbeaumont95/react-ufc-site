@@ -16,7 +16,7 @@ const Navbar = () => {
       </Link>
       <Link to="/staff">
       
-      <ReactBootStrap.Nav.Link href="#pricing">Staff</ReactBootStrap.Nav.Link>
+      <ReactBootStrap.Nav.Link href="#staff">Staff</ReactBootStrap.Nav.Link>
       </Link>
 
       <Link to="/events">
@@ -32,6 +32,10 @@ const Navbar = () => {
         <ReactBootStrap.NavDropdown.Item href="#action/3.4">Separated link</ReactBootStrap.NavDropdown.Item>
       </ReactBootStrap.NavDropdown>
     </ReactBootStrap.Nav>
+    <Link to="/weight-classes">
+      
+      <ReactBootStrap.Nav.Link href="#wow">Weight-Classes</ReactBootStrap.Nav.Link>
+      </Link>
     <ReactBootStrap.Nav>
       <ReactBootStrap.Nav.Link href="#deets">Back-End Site</ReactBootStrap.Nav.Link>
       <ReactBootStrap.Nav.Link eventKey={2} href="#memes">

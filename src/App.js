@@ -1,30 +1,31 @@
-import './App.css';
-import FightersList from './Components/FightersList';
-import Header from './Components/Header';
-import Navbar from './Components/Navbar';
-import { Router } from '@reach/router'
-import StaffList from './Components/StaffList';
-import HomePage from './Components/HomePage';
-import Events from './Components/Events'
-import SingleFighter from './Components/SingleFighter';
-import SingleStaff from './Components/SingleStaff';
+import "./App.css";
+import Header from "./Components/Header";
+
+import { Router, Link } from "@reach/router";
+import HomePage from "./Components/HomePage";
+import Events from "./Components/Events";
+import StaffList from "./Components/StaffList";
+import SingleStaff from "./Components/SingleStaff";
+import FightersList from "./Components/FightersList";
+import NavBar from "./Components/Navbar";
+import SingleFighter from "./Components/SingleFighter";
+import FightersByWeight from "./Components/FightersByWeight";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <Navbar />
-    <Header />
-   
-    <Router>
-    <HomePage path="/"/>
-      <FightersList path="/fighters"/>
-      <SingleFighter path="/fighters/:full_name"/>
-      <SingleStaff path="/staff/:full_name"/>
-      <StaffList path="/staff"/>
-      <Events path="/events"/>
-    </Router>
-    
+        <NavBar />
+        <Header />
+        <Router>
+          <HomePage path="/" />
+          <Events path="/events" />
+          <StaffList path="/staff" />
+          <SingleStaff path="/staff/:full_name" />
+          <FightersList path="/fighters" />
+          <SingleFighter path="/fighters/:full_name" />
+          <FightersByWeight path="/fighters/weight/:weight" />
+        </Router>
       </header>
     </div>
   );

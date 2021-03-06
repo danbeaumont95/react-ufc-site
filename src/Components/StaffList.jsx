@@ -19,12 +19,16 @@ class StaffList extends Component {
             <div className="staff_list">
                 {staff.map((staff) => {
                     return (
-                        <li key={staff.full_name}>
+                        <>
+                        <li key={staff.full_name} className="staff_list_items">
                             <Link to={`/staff/${staff.full_name}`}>
-                            <h4>{staff.first_name}</h4>
+                            <h4>{staff.first_name} {staff.surname}</h4>
+                            <h5>Role: {staff.role}</h5>
+                            <h5>Years at company: {staff.years_at_company}</h5>
                             <img className="staff_img" src={staff.img_url} alt="staff member"/>
                             </Link>
                         </li>
+                        </>
                     )
                 })}
             </div>

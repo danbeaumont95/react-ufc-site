@@ -4,10 +4,38 @@
 
 .fighters_list {
   list-style-type: none;
+  box-sizing: border-box;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fighters_list_items {
+  width: 350px;
+  border: 1px solid gray;
+  box-shadow: 1px 1px 3px rgb(138, 108, 108);
+  border-top: 10px solid rgb(54, 46, 46);
+  min-height: 250px;
+  padding: 20px;
+  margin: 30px;
 }
 
 .staff_list {
   list-style-type: none;
+  box-sizing: border-box;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.staff_list_items {
+  width: 350px;
+  border: 1px solid gray;
+  box-shadow: 1px 1px 3px rgb(138, 108, 108);
+  border-top: 10px solid rgb(54, 46, 46);
+  min-height: 250px;
+  padding: 20px;
+  margin: 30px;
 }
 
 .fighter_img {
@@ -26,15 +54,19 @@
   right: 0;
   left: 0;
   bottom: 0;
-  }
+}
 
 .events_list {
-    list-style-type: none;
-    border: orange 2px solid;
-  }
+  list-style-type: none;
+  border: orange 2px solid;
+}
 
-  .event_title {
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: underline;
-  }
+.event_title {
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* .button {
+  height: 100px;
+} */
