@@ -32,15 +32,15 @@ const Navbar = () => {
         <ReactBootStrap.NavDropdown.Item href="#action/3.4">Separated link</ReactBootStrap.NavDropdown.Item>
       </ReactBootStrap.NavDropdown>
     </ReactBootStrap.Nav>
-    <Link to="/weight-classes">
-      
-      <ReactBootStrap.Nav.Link href="#wow">Weight-Classes</ReactBootStrap.Nav.Link>
-      </Link>
     <ReactBootStrap.Nav>
+      <Link to="/backend">
       <ReactBootStrap.Nav.Link href="#deets">Back-End Site</ReactBootStrap.Nav.Link>
+      </Link>
+      <Link to="/store">
       <ReactBootStrap.Nav.Link eventKey={2} href="#memes">
         Store
       </ReactBootStrap.Nav.Link>
+      </Link>
     </ReactBootStrap.Nav>
   </ReactBootStrap.Navbar.Collapse>
 </ReactBootStrap.Navbar>

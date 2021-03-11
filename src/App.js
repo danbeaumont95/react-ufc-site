@@ -1,7 +1,7 @@
 import "./App.css";
 import Header from "./Components/Header";
 
-import { Router, Link } from "@reach/router";
+import { Router } from "@reach/router";
 import HomePage from "./Components/HomePage";
 import Events from "./Components/Events";
 import StaffList from "./Components/StaffList";
@@ -10,6 +10,10 @@ import FightersList from "./Components/FightersList";
 import NavBar from "./Components/Navbar";
 import SingleFighter from "./Components/SingleFighter";
 import FightersByWeight from "./Components/FightersByWeight";
+import BackEnd from "./Components/BackEnd";
+import Page404 from "./Components/Page404";
+import Store from "./Components/Store";
+import StoreItemsByType from "./Components/StoreItemsByType";
 
 function App() {
   return (
@@ -25,6 +29,10 @@ function App() {
           <FightersList path="/fighters" />
           <SingleFighter path="/fighters/:full_name" />
           <FightersByWeight path="/fighters/weight/:weight" />
+          <BackEnd path="/backend" />
+          <Store path="/store" />
+          <StoreItemsByType path="/store/:type" />
+          <Page404 default />
         </Router>
       </header>
     </div>

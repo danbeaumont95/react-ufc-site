@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import * as api from '../api'
-import { Link, Router } from "@reach/router";
-import FightersList from './FightersList';
 
 // mapboxgl.accessToken = 'eyJ1IjoiZGFuYmVhdW1vbnQ5NSIsImEiOiJja2xhbWVlaDcwNnd1Mm9zNDRhdG42emtkIn0';
 
@@ -27,8 +25,6 @@ class HomePage extends Component {
             <br/>
             <h3>Upcoming UFC events</h3>
             {fighters.map((fighter) => {
-
-                console.log(fighter, 'fighter from state homepage');
                 if (fighter.full_name === 'IsraelAdesanya' ) {
                     return (
                         <>                    

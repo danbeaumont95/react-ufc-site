@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import * as api from '../api'
 import { Link } from '@reach/router'
 import WeightButtons from './WeightButtons';
-import '../'
+import AddFighterForm from './AddFighterForm';
+
 
 class FightersList extends Component {
     state={
@@ -18,9 +19,9 @@ class FightersList extends Component {
         const { fighters, isLoading, weights } = this.state;
         if (isLoading) return <p>Loading...</p> 
         return (
+            <>
         <div className="fighters_list">
             {weights.map((weights) => {
-                console.log(weights, 'weights in FL');
                 return (
                     <li>
                         <WeightButtons weights={weights.weights}/>
@@ -43,6 +44,8 @@ class FightersList extends Component {
                 )
             })}
         </div>
+        <AddFighterForm addNewFighter={this.addNewFighter}/>
+        </>
     ) 
     }
   fetchFighters() {
@@ -55,6 +58,13 @@ class FightersList extends Component {
       api.getAllWeights().then((weights) => {
           this.setState({ weights, isLoading: false })
       })
+  }
+  addNewFighter(newFighter) {
+    this.setState((currentState) => {
+        return {
+            fighters: [newFighter, ...currentState.fighters]
+        }
+    })
   }
 }
 

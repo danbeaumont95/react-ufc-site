@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import * as api from '../api'
+import FightersButton from './FightersButton';
 
 class FightersByWeight extends Component {
     state={
@@ -31,7 +32,9 @@ class FightersByWeight extends Component {
                     )
                 })}
             </div>
+            <FightersButton />
             </>
+            
         )
     }
     fetchFightersByWeight(weight) {
